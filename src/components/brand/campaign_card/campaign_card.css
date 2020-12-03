@@ -1,11 +1,16 @@
 .campaign_card{
-	background:teal;
+	background:#dddddd;
 	height: 300px;
 	width: 150px;
-	padding: 30px;
+	padding: 12px;
 	margin: 20px;
 	display: inline-block;
+	border-radius: 12px;
 
+}
 
+.campaign_card > img{
+	width: inherit;
+	border-radius: 12px;
 
 }
