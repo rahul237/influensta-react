@@ -4,11 +4,13 @@ import Brand from './Brand/Brand';
 import Campaigns from './containers/brand/my_campaigns/my_campaigns';
 import Card from './components/brand/campaign_card/campaign_card';
 import Toolbar from './components/Common/Toolbar/Toolbar';
+import SideDrawer from './components/Common/SideDrawer/SideDrawer'
 
 function App() {
   return (
     <div className="App">
         <Toolbar brandName="frewf" />
+        <SideDrawer brandName="frewf"/>
         <Brand name="frewf" age="34"></Brand>
 
         <Campaigns>
