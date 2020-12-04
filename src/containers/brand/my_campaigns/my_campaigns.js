@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './my_campaigns.css';
 const my_campaigns = (props) => {
@@ -7,6 +8,6 @@ const my_campaigns = (props) => {
         {props.children}
     </p>
     ) 
-}
+};
 
 export default my_campaigns;

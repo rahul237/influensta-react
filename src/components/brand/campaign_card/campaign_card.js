@@ -8,7 +8,7 @@ const campaign_card = (props) => {
         <img src={props.img_url} ></img>
                 This is campaign card
     </div>
-    ) 
-}
+    )
+};
 
 export default campaign_card;
