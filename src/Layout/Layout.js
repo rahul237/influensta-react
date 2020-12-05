@@ -1,15 +1,20 @@
 import react from 'react';
 
-import Aux from '../hoc/aux';
+import Aux from '../hoc/auxil';
+import Toolbar from '../components/Common/Toolbar/Toolbar';
+import SideDrawer from '../components/Common/SideDrawer/Sidebar2';
 
 const layout = (props)=>(
     <Aux>
     <div>
-        Toolbar,Sidedrawer, Backdrop
+        <Toolbar brandName="pewdiepie"/>
+        <SideDrawer>
+        <main>
+            {props.children}
+        </main>
+        </SideDrawer>
+        
     </div>
-    <main>
-        {props.children}
-    </main>
     </Aux>
 );
 
