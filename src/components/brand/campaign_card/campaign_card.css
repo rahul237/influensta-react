@@ -1,16 +1,49 @@
 .campaign_card{
 	background:#dddddd;
-	height: 300px;
-	width: 150px;
+	height: 245px;
+	width: 700px;
 	padding: 12px;
 	margin: 20px;
 	display: inline-block;
 	border-radius: 12px;
-
+	box-sizing: border-box;
 }
 
-.campaign_card > img{
-	width: inherit;
-	border-radius: 12px;
+.imgClass{
+	height: inherit;
+	width: 175px;
+	float: left;
+	border-radius: 20px;
+}
 
+.Content{
+	margin-left: 185px;
+	margin-right: 10px;
+	width: 505px;
+}
+
+.btnClass{
+	float: right;
+	margin-right: 20px;
+	margin-top: 70px;
+	border-radius: 15px;
+}
+
+.categoryClass{
+	margin-top: 90px;
+}
+
+.campaign_card > h2{	
+	margin: 0;
+	top: 0;
+	left: 250px;
+	display: inline-flex;
+}
+
+.campaign_card > p{	
+	display: inline-flex;
+}
+
+.h2{
+	margin: 0;
 }
