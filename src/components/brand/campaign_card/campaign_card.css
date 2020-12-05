@@ -1,7 +1,7 @@
 .campaign_card{
 	background:#dddddd;
 	height: 245px;
-	width: 700px;
+	width: 600px;
 	padding: 12px;
 	margin: 20px;
 	display: inline-block;
@@ -19,13 +19,13 @@
 .Content{
 	margin-left: 185px;
 	margin-right: 10px;
-	width: 505px;
+	width: 405px;
 }
 
 .btnClass{
 	float: right;
 	margin-right: 20px;
-	margin-top: 70px;
+	margin-top: 90px;
 	border-radius: 15px;
 }
 
