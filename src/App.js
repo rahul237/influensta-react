@@ -8,6 +8,7 @@ import SideDrawer from './components/Common/SideDrawer/SideDrawer';
 import Recomm_influencers from './containers/brand/recomm_influencers/recomm_influencers';
 import Footer from './components/Common/Footer/Footer';
 import Campaign_detail from './containers/brand/campaign_detail/campaign_detail'
+import Auth from './containers/auth/auth';
 function App() {
   return (
     <div className="App">
@@ -25,6 +26,7 @@ function App() {
         <Card img_url="https://images.unsplash.com/photo-1586016499740-fb13cc4e4b66?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjR8fHRodW1ibmFpbHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"/>
 
         </Campaigns>
+        <Auth/>
         <Recomm_influencers />
         <Footer />
         <Campaign_detail campaignName="Nutom campaign" campaignInfo="This is for an Olympiad" campaignCategory="Education"/>
