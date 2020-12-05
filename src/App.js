@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Brand from './Brand/Brand';
 import Campaigns from './containers/brand/my_campaigns/my_campaigns';
