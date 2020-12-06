@@ -1,9 +1,8 @@
 import React from 'react';
 import './NavigationItem.css';
-import {Link} from 'react-router-dom';
 
 const navigationItem = (props) => (
-<li className="NavigationItem"><Link to={props.link}>{props.children}</Link></li>
+<li className="NavigationItem"><a href={props.link} className={props.active ? "NavigationItem a:active" : null}>{props.children}</a></li>
 );
 
 export default navigationItem; 

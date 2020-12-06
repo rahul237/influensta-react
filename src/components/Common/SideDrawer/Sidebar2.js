@@ -7,7 +7,7 @@ import Card from '../../brand/campaign_card/campaign_card';
 import Recomm_influencers from '../../../containers/brand/recomm_influencers/recomm_influencers';
 import Auth from '../../../containers/auth/auth';
 
-const SidebarExampleVisible = (props) => (
+const SidebarExampleVisible = () => (
   <Sidebar.Pushable as={Segment}>
     <Sidebar
       as={Menu}
@@ -36,8 +36,7 @@ const SidebarExampleVisible = (props) => (
 
     <Sidebar.Pusher>
       <Segment basic>
-          {props.children}
-            {/*<Brand name="frewf" age="34"></Brand>
+            <Brand name="frewf" age="34"></Brand>
             <Campaigns>
             <Card img_url="https://images.unsplash.com/photo-1586016499740-fb13cc4e4b66?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjR8fHRodW1ibmFpbHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"/>
             <Card img_url="https://images.unsplash.com/photo-1586016499740-fb13cc4e4b66?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjR8fHRodW1ibmFpbHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"/> 
@@ -49,7 +48,7 @@ const SidebarExampleVisible = (props) => (
             </Campaigns>
             <Auth/>
             <Recomm_influencers />
-            <Footer /> */}
+            <Footer />
       </Segment>
     </Sidebar.Pusher>
   </Sidebar.Pushable>
