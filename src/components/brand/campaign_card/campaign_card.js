@@ -13,7 +13,7 @@ const campaign_card = (props) => {
         <div className = "Content"> 
         <Link to={{pathname: '/campaignName'}}><h2>Campaign Name</h2> </Link>
             <div><p> Campaign description.....  ............  ..........lorem ipsum....  ............  ........  .......... Nutom is thsi and that Nutom is thsi and that </p></div>
-            <div className="btnClass"><button> Add to Campaign </button> </div>
+            <div className="btnClass"><Link to={{pathname: '/campaignName'}}><button> View Details </button></Link> </div>
             <div className="categoryClass">
                 <Category categoryName = "Fashion" />
                 <Category categoryName = "Tech" />
