@@ -4,6 +4,10 @@ import './index.css';
 import 'semantic-ui-css/semantic.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import axios from 'axios';
+
+axios.defaults.baseURL = 'http://localhost:3004';
+axios.defaults.headers.common['Content-Type'] = 'application/json';
 
 ReactDOM.render(
   <React.StrictMode>

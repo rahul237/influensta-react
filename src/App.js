@@ -4,6 +4,7 @@ import Campaign_detail from './containers/brand/campaign_detail/campaign_detail'
 import Layout from './Layout/Layout';
 import {BrowserRouter} from 'react-router-dom';
 import BrandHome from './containers/brand/BrandHome/BrandHome';
+import LoginForm from './components/login/login';
 import {Route} from 'react-router-dom';
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           < Route path="/campaignName" exact component={Campaign_detail} />
         </Layout>
       </BrowserRouter>
+      <LoginForm/>
     </div>
   );
 }
