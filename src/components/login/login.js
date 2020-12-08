@@ -1,8 +1,23 @@
-import React from 'react'
+import React,{Component} from 'react'
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+import axios from '../../axios';
 
-const LoginForm = () => (
-  <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
+class LoginForm extends Component{ 
+
+  submitHandler = () => {
+    const data={
+      email:"tech@brand.com",
+      password:"123456"
+    };
+    axios.post('/login/api/brand',data)
+    .then(response =>console.log(response))
+    .catch(error=>console.error(error));
+    console.log("form submitted");
+
+  }
+  
+  render(){
+  return(<Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
     <Grid.Column style={{ maxWidth: 450 }}>
       <Header as='h2' color='teal' textAlign='center'>
         <Image src='/logo.png' /> Log-in to your account
@@ -18,7 +33,7 @@ const LoginForm = () => (
             type='password'
           />
 
-          <Button color='teal' fluid size='large'>
+          <Button color='teal' fluid size='large' onClick={this.submitHandler}>
             Login
           </Button>
         </Segment>
@@ -28,6 +43,10 @@ const LoginForm = () => (
       </Message>
     </Grid.Column>
   </Grid>
-)
+  )}
+
+}
+
+
 
 export default LoginForm
